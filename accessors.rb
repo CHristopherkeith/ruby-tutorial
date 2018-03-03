@@ -1,16 +1,16 @@
 class HelloWorld
 	# 存取器（读取或设置实例变量）
 	attr_accessor :name 
-	# 类方法（只可以供类本身调用）
+	# 类方法1（只可以供类本身调用）
 	class << self # (此形式可用于定义单例类)
 		def hello(name)
 			puts "#{name} said hello."
 		end
 	end
-	# 类方法（只可以供类本身调用）
+	# 类方法2（只可以供类本身调用）
 	def HelloWorld.hello_again(name)
-			puts "#{name} said hello again."
-		end
+		puts "#{name} said hello again."
+	end
 	# 实例方法（供实例调用）
 	def initialize
 		@name
